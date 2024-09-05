@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <input type="text" id="display" disabled> <!-- Display screen -->
+        </div>
+        <div class="topkeys">
+            <button class="top3" onclick="clearDisplay()">AC</button>
+            <button class="top3" onclick="toggleSign()">+/-</button>
+            <button class="top3" onclick="performOperation('%')">%</button>
+            <button class="rights" onclick="performOperation('/')">/</button>
+        </div>
+        <div class="numbers1">
+            <button class="num" onclick="appendNumber('7')">7</button>
+            <button class="num" onclick="appendNumber('8')">8</button>
+            <button class="num" onclick="appendNumber('9')">9</button>
+            <button class="rights" onclick="performOperation('*')">x</button>
+        </div>
+        <div class="numbers2">
+            <button class="num" onclick="appendNumber('4')">4</button>
+            <button class="num" onclick="appendNumber('5')">5</button>
+            <button class="num" onclick="appendNumber('6')">6</button>
+            <button class="rights" onclick="performOperation('-')">-</button>
+        </div>
+        <div class="numbers3">
+            <button class="num" onclick="appendNumber('1')">1</button>
+            <button class="num" onclick="appendNumber('2')">2</button>
+            <button class="num" onclick="appendNumber('3')">3</button>
+            <button class="rights" onclick="performOperation('+')">+</button>
+        </div>
+        <div class="numbers4">
+            <button class="num0" onclick="appendNumber('0')">0</button>
+            <button class="num" onclick="appendDecimal()">.</button>
+            <button class="rights" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

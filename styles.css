@@ -1,0 +1,88 @@
+.container{background-color: rgb(0, 0, 0);
+    height: 410px;
+    width: 230px;
+    align-content: center;
+    display: flexbox;
+    border-radius: 15px;
+    margin: 260px;
+
+}
+.display{
+    height: 130px;
+    margin-bottom: 5px;
+}
+.topkeys{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-left: 7px;
+}
+.numbers1{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+}
+.numbers2{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+}
+.numbers3{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+}
+.numbers4{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+}
+.rights{height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    border-style: none;
+    font-size: 1.5rem;
+}
+.top3{height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(236, 236, 235);
+    border-style: none;
+    font-size: 1.5rem;
+}
+.num{height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(128, 122, 112);
+    border-style: none;
+    font-size: 1.5rem;
+    color: white;
+}
+.num0{height: 50px;
+    width: 105px;
+    border-radius: 60px;
+    background-color: rgb(128, 122, 112);
+    border-style: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.display input {
+    width: 200px;
+    height: 130px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    text-align: right;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
