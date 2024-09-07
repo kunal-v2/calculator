@@ -1,17 +1,17 @@
-let currentInput = "0";   // Set initial input
+let currentInput = "0";  
 let previousInput = "";
 let operation = null;
 let shouldResetDisplay = false;
 
-// Get the display element after the DOM has loaded
+
 const display = document.getElementById('display');
 
-// Update the display with the current input
+
 function updateDisplay() {
     display.value = currentInput;
 }
 
-// Append number to current input and update the display
+
 function appendNumber(number) {
     if (currentInput === "0" || shouldResetDisplay) {
         currentInput = number;
@@ -22,7 +22,7 @@ function appendNumber(number) {
     updateDisplay();
 }
 
-// Append a decimal point, but only allow one
+
 function appendDecimal() {
     if (!currentInput.includes(".")) {
         currentInput += ".";
@@ -30,7 +30,7 @@ function appendDecimal() {
     }
 }
 
-// Clear the calculator display and reset values
+
 function clearDisplay() {
     currentInput = "0";
     previousInput = "";
@@ -38,7 +38,7 @@ function clearDisplay() {
     updateDisplay();
 }
 
-// Toggle the sign of the current input
+
 function toggleSign() {
     currentInput = (parseFloat(currentInput) * -1).toString();
     updateDisplay();
